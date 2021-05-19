@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-geometry-cube-geometric-shape-cuboid-cube-angle-furniture-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-geometry-cube-geometric-shape-cuboid-cube-angle-furniture-rectangle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-40680_cone-clipart-cuboid-shape-cuboid-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sphere_calc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shape-cone-pyramid-three-dimensional-space-rectangle-png-favpng-NKG4ir7e3Rxf09YhJRv6JWSrA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filecone-geometrypng-wikimedia-commons-math-geometry-png-300_390.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

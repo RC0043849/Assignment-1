@@ -16,5 +16,10 @@ namespace Assignment_1
         {
             InitializeComponent();
         }
+
+        private void Cuboid_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
