@@ -30,24 +30,31 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Cuboid = new System.Windows.Forms.TabPage();
-            this.Sphere = new System.Windows.Forms.TabPage();
-            this.Cone = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.V1 = new System.Windows.Forms.Label();
+            this.SA1 = new System.Windows.Forms.Label();
             this.calculate = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Sphere = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Cone = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.Cuboid.SuspendLayout();
-            this.Sphere.SuspendLayout();
-            this.Cone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Sphere.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Cone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +72,8 @@
             // 
             // Cuboid
             // 
+            this.Cuboid.Controls.Add(this.V1);
+            this.Cuboid.Controls.Add(this.SA1);
             this.Cuboid.Controls.Add(this.calculate);
             this.Cuboid.Controls.Add(this.textBox3);
             this.Cuboid.Controls.Add(this.textBox2);
@@ -79,29 +88,54 @@
             this.Cuboid.UseVisualStyleBackColor = true;
             this.Cuboid.Click += new System.EventHandler(this.Cuboid_Click);
             // 
-            // Sphere
+            // V1
             // 
-            this.Sphere.Controls.Add(this.textBox4);
-            this.Sphere.Controls.Add(this.pictureBox2);
-            this.Sphere.Location = new System.Drawing.Point(4, 22);
-            this.Sphere.Name = "Sphere";
-            this.Sphere.Padding = new System.Windows.Forms.Padding(3);
-            this.Sphere.Size = new System.Drawing.Size(792, 424);
-            this.Sphere.TabIndex = 1;
-            this.Sphere.Text = "Sphere";
-            this.Sphere.UseVisualStyleBackColor = true;
+            this.V1.AutoSize = true;
+            this.V1.Location = new System.Drawing.Point(582, 226);
+            this.V1.Name = "V1";
+            this.V1.Size = new System.Drawing.Size(45, 13);
+            this.V1.TabIndex = 6;
+            this.V1.Text = "Volume:";
             // 
-            // Cone
+            // SA1
             // 
-            this.Cone.Controls.Add(this.textBox6);
-            this.Cone.Controls.Add(this.textBox5);
-            this.Cone.Controls.Add(this.pictureBox3);
-            this.Cone.Location = new System.Drawing.Point(4, 22);
-            this.Cone.Name = "Cone";
-            this.Cone.Size = new System.Drawing.Size(792, 424);
-            this.Cone.TabIndex = 2;
-            this.Cone.Text = "Cone";
-            this.Cone.UseVisualStyleBackColor = true;
+            this.SA1.AutoSize = true;
+            this.SA1.Location = new System.Drawing.Point(579, 188);
+            this.SA1.Name = "SA1";
+            this.SA1.Size = new System.Drawing.Size(72, 13);
+            this.SA1.TabIndex = 5;
+            this.SA1.Text = "Surface Area:";
+            // 
+            // calculate
+            // 
+            this.calculate.Location = new System.Drawing.Point(589, 91);
+            this.calculate.Name = "calculate";
+            this.calculate.Size = new System.Drawing.Size(111, 42);
+            this.calculate.TabIndex = 4;
+            this.calculate.Text = "Calculate";
+            this.calculate.UseVisualStyleBackColor = true;
+            this.calculate.Click += new System.EventHandler(this.Calculate_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(451, 290);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(81, 20);
+            this.textBox3.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(195, 342);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(8, 188);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -113,6 +147,45 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // Sphere
+            // 
+            this.Sphere.Controls.Add(this.label2);
+            this.Sphere.Controls.Add(this.label1);
+            this.Sphere.Controls.Add(this.textBox4);
+            this.Sphere.Controls.Add(this.pictureBox2);
+            this.Sphere.Location = new System.Drawing.Point(4, 22);
+            this.Sphere.Name = "Sphere";
+            this.Sphere.Padding = new System.Windows.Forms.Padding(3);
+            this.Sphere.Size = new System.Drawing.Size(792, 424);
+            this.Sphere.TabIndex = 1;
+            this.Sphere.Text = "Sphere";
+            this.Sphere.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(657, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Volume:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(657, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Surface Area:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(40, 191);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 1;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Assignment_1.Properties.Resources.sphere_calc;
@@ -123,6 +196,62 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // Cone
+            // 
+            this.Cone.Controls.Add(this.button1);
+            this.Cone.Controls.Add(this.label4);
+            this.Cone.Controls.Add(this.label3);
+            this.Cone.Controls.Add(this.textBox6);
+            this.Cone.Controls.Add(this.textBox5);
+            this.Cone.Controls.Add(this.pictureBox3);
+            this.Cone.Location = new System.Drawing.Point(4, 22);
+            this.Cone.Name = "Cone";
+            this.Cone.Size = new System.Drawing.Size(792, 424);
+            this.Cone.TabIndex = 2;
+            this.Cone.Text = "Cone";
+            this.Cone.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(610, 121);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Calculate";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(610, 270);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Volume:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(607, 233);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Surface Area:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(236, 341);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 2;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(100, 179);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(93, 20);
+            this.textBox5.TabIndex = 1;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Assignment_1.Properties.Resources.filecone_geometrypng_wikimedia_commons_math_geometry_png_300_390;
@@ -132,57 +261,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(8, 188);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(195, 342);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(451, 290);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 20);
-            this.textBox3.TabIndex = 3;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(40, 191);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(100, 179);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(93, 20);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(236, 341);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 2;
-            // 
-            // calculate
-            // 
-            this.calculate.Location = new System.Drawing.Point(589, 91);
-            this.calculate.Name = "calculate";
-            this.calculate.Size = new System.Drawing.Size(111, 42);
-            this.calculate.TabIndex = 4;
-            this.calculate.Text = "Calculate";
-            this.calculate.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -195,12 +273,12 @@
             this.tabControl1.ResumeLayout(false);
             this.Cuboid.ResumeLayout(false);
             this.Cuboid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Sphere.ResumeLayout(false);
             this.Sphere.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Cone.ResumeLayout(false);
             this.Cone.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -222,6 +300,13 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label V1;
+        private System.Windows.Forms.Label SA1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 

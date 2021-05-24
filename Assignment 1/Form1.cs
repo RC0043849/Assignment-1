@@ -21,5 +21,28 @@ namespace Assignment_1
         {
 
         }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // read force and angle from textboxes
+                double Width = double.Parse(textBox1.Text);
+                double Length = double.Parse(textBox2.Text);
+                double Height = double.Parse(textBox3.Text);
+                //
+                double Volume = Length * Height * Width ;
+                double Area = 2 * ((Height * Width)  + (Width * Length ) + (Length * Height) ;
+                //
+                label1.Text = "Volume =" + Volume;
+                label2.Text = "Area =" + Area;
+
+
+            }
+            catch
+            {
+                MessageBox.Show("oops!");
+            }
+        }
     }
 }
