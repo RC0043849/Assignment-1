@@ -27,15 +27,15 @@ namespace Assignment_1
             try
             {
                 // read force and angle from textboxes
-                double Width = double.Parse(textBox1.Text);
+                double Height = double.Parse(textBox1.Text);
                 double Length = double.Parse(textBox2.Text);
-                double Height = double.Parse(textBox3.Text);
+                double Width = double.Parse(textBox3.Text);
                 //
-                double Volume = Length * Height * Width ;
-                double Area = 2 * ((Height * Width)  + (Width * Length ) + (Length * Height) ;
+                double Volume = Length * Height * Width;
+                double Area = 2 * ((Height * Width) + (Width * Length) + (Length * Height));
                 //
-                label1.Text = "Volume =" + Volume;
-                label2.Text = "Area =" + Area;
+                SA1.Text = " Surface Area =" + Area;
+                V1.Text = "Volume =" + Volume;
 
 
             }
@@ -43,6 +43,46 @@ namespace Assignment_1
             {
                 MessageBox.Show("oops!");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculate2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // read radius from text box
+                double Radius = double.Parse(textBox4.Text);
+                //
+                double Area = 4 * Math.PI * (Radius * Radius);
+                double Volume = (4 / 3) * Math.PI * (Radius * Radius * Radius);
+                //
+                SA2.Text = "Surface area = " + Area;
+                V2.Text = "Volume = " + Volume;
+
+
+            }
+            catch
+            {
+                MessageBox.Show("oops!");
+            }
+        }
+
+        private void SA2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // read radius and hight from text boxes
+                double height = double.Parse(textBox5);
+                double Radius = double.Parse(textBox6);
         }
     }
 }
