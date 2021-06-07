@@ -81,8 +81,21 @@ namespace Assignment_1
             try
             {
                 // read radius and hight from text boxes
-                double height = double.Parse(textBox5);
-                double Radius = double.Parse(textBox6);
-        }
+                double height = double.Parse(textBox5.Text);
+                double Radius = double.Parse(textBox6.Text);
+                //
+                double Area = (Math.PI * Radius) * (Radius + (Math.Sqrt(Height * Height + Radius * Radius)));
+                double Volume = (1.0 / 3.0 * Math.PI) * (Radius * Radius) * Height;
+                //
+                SA3.Text = "Surface area = " + Area;
+                V3.Text = "Volume = " + Volume;
+             
+
+            }
+            catch
+            {
+                MessageBox.Show("oops!");
+            }
+    }
     }
 }

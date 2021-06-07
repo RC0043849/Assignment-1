@@ -38,18 +38,18 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Sphere = new System.Windows.Forms.TabPage();
+            this.Calculate2 = new System.Windows.Forms.Button();
             this.V2 = new System.Windows.Forms.Label();
             this.SA2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Cone = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.V3 = new System.Windows.Forms.Label();
+            this.SA3 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.Calculate2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Cuboid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -163,6 +163,16 @@
             this.Sphere.Text = "Sphere";
             this.Sphere.UseVisualStyleBackColor = true;
             // 
+            // Calculate2
+            // 
+            this.Calculate2.Location = new System.Drawing.Point(644, 84);
+            this.Calculate2.Name = "Calculate2";
+            this.Calculate2.Size = new System.Drawing.Size(98, 45);
+            this.Calculate2.TabIndex = 4;
+            this.Calculate2.Text = "Calculate";
+            this.Calculate2.UseVisualStyleBackColor = true;
+            this.Calculate2.Click += new System.EventHandler(this.Calculate2_Click);
+            // 
             // V2
             // 
             this.V2.AutoSize = true;
@@ -202,8 +212,8 @@
             // Cone
             // 
             this.Cone.Controls.Add(this.button1);
-            this.Cone.Controls.Add(this.label4);
-            this.Cone.Controls.Add(this.label3);
+            this.Cone.Controls.Add(this.V3);
+            this.Cone.Controls.Add(this.SA3);
             this.Cone.Controls.Add(this.textBox6);
             this.Cone.Controls.Add(this.textBox5);
             this.Cone.Controls.Add(this.pictureBox3);
@@ -226,23 +236,23 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // label4
+            // V3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(539, 243);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Volume:";
+            this.V3.AutoSize = true;
+            this.V3.Location = new System.Drawing.Point(539, 243);
+            this.V3.Name = "V3";
+            this.V3.Size = new System.Drawing.Size(45, 13);
+            this.V3.TabIndex = 4;
+            this.V3.Text = "Volume:";
             // 
-            // label3
+            // SA3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(539, 196);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Surface Area:";
+            this.SA3.AutoSize = true;
+            this.SA3.Location = new System.Drawing.Point(539, 196);
+            this.SA3.Name = "SA3";
+            this.SA3.Size = new System.Drawing.Size(72, 13);
+            this.SA3.TabIndex = 3;
+            this.SA3.Text = "Surface Area:";
             // 
             // textBox6
             // 
@@ -267,16 +277,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // Calculate2
-            // 
-            this.Calculate2.Location = new System.Drawing.Point(644, 84);
-            this.Calculate2.Name = "Calculate2";
-            this.Calculate2.Size = new System.Drawing.Size(98, 45);
-            this.Calculate2.TabIndex = 4;
-            this.Calculate2.Text = "Calculate";
-            this.Calculate2.UseVisualStyleBackColor = true;
-            this.Calculate2.Click += new System.EventHandler(this.Calculate2_Click);
             // 
             // Form1
             // 
@@ -322,8 +322,8 @@
         private System.Windows.Forms.Label V2;
         private System.Windows.Forms.Label SA2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label V3;
+        private System.Windows.Forms.Label SA3;
         private System.Windows.Forms.Button Calculate2;
     }
 }
