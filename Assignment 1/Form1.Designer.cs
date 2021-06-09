@@ -109,12 +109,14 @@
             // 
             // calculate
             // 
+            this.calculate.BackColor = System.Drawing.Color.Navy;
+            this.calculate.ForeColor = System.Drawing.Color.White;
             this.calculate.Location = new System.Drawing.Point(589, 91);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(111, 42);
             this.calculate.TabIndex = 4;
             this.calculate.Text = "Calculate";
-            this.calculate.UseVisualStyleBackColor = true;
+            this.calculate.UseVisualStyleBackColor = false;
             this.calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
             // textBox3
@@ -165,12 +167,14 @@
             // 
             // Calculate2
             // 
+            this.Calculate2.BackColor = System.Drawing.Color.Navy;
+            this.Calculate2.ForeColor = System.Drawing.Color.White;
             this.Calculate2.Location = new System.Drawing.Point(644, 84);
             this.Calculate2.Name = "Calculate2";
             this.Calculate2.Size = new System.Drawing.Size(98, 45);
             this.Calculate2.TabIndex = 4;
             this.Calculate2.Text = "Calculate";
-            this.Calculate2.UseVisualStyleBackColor = true;
+            this.Calculate2.UseVisualStyleBackColor = false;
             this.Calculate2.Click += new System.EventHandler(this.Calculate2_Click);
             // 
             // V2
@@ -226,11 +230,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.BackColor = System.Drawing.Color.Navy;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(598, 93);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 36);
+            this.button1.Size = new System.Drawing.Size(109, 41);
             this.button1.TabIndex = 5;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = false;
